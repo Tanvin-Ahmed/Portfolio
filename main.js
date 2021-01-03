@@ -1,5 +1,5 @@
 //  navbar
-document.querySelector('.menu-toggle').addEventListener('click', function(){
+document.querySelector('.-toggle').addEventListener('click', function(){
     document.querySelector('body').classList.toggle('open')
 })
 
@@ -12,9 +12,9 @@ $(document).ready(function () {
         });
         // filter items on button click
         $('.project .filter-button-group').on( 'click', 'button', function() {
-            var filterValue = $(this).attr('data-filter');
-            $grid.isotope({ filter: filterValue });
-        });
+            var filterValue = $(this).attr('data-filter')
+            $grid.isotope({ filter: filterValue })
+        })
 
         // img carosel
         $('.project .grid .element-item .our-project .img .test-popup-link').magnificPopup({
@@ -22,9 +22,9 @@ $(document).ready(function () {
             gallery:{enabled:true}
           });
 
-        //   owl carousel
+        //    carousel
 
-        $('.about .carousel .owl-carousel').owlCarousel({
+        $('.about .carousel .-carousel').owlCarousel({
             loop:true,
             autoplay:true,
             dots:true,
